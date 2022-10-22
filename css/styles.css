@@ -1,0 +1,692 @@
+:root {
+  --highlight-color: #2196f3;
+  --bk-dark-color: #2f303a;
+  --main-font-color: #212121;
+  --ordinary-font-color: #757575;
+  --line-height-for-font-14: 1.14;
+  --element-gap: 30px;
+  --team-and-button-color: #f5f4fa;
+  --project-gallery-border-color: #eeeeee;
+  --client-logo-color: #AFB1B8;
+  --elipse: rgba(255, 255, 255, 0.1);
+  --transition-time-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*Here is normalization - chrome*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  list-style-type: none;
+}
+
+/*here is css*/
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--main-font-color);
+}
+
+.menu-border {
+  border-bottom: 1px solid #ececec;
+  min-height: 80px;
+}
+
+.menu {
+  height: 79px;
+  padding: 0 27px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-flex-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 492px;
+}
+
+.menu-flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  vertical-align: middle;
+  font-weight: 500;
+  display: flex;
+  width: 254px;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-font-color);
+  line-height: var(--line-height-for-font-14);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.link:visited {
+  color: inherit;
+}
+
+.link:focus,
+.link:hover {
+  color: var(--highlight-color);
+  transition: color var(--transition-time-timing)
+}
+
+.nav-link-present {
+  position: relative;
+  color: var(--highlight-color);
+}
+
+.nav-link-present::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: -204%;
+  background: linear-gradient(var(--highlight-color), var(--highlight-color));
+  border-radius: 2px;
+}
+
+.nav-link-present:visited {
+  color: var(--highlight-color);
+}
+
+.gray-mail-phone {
+  color: var(--ordinary-font-color);
+}
+
+.icon-mail-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: transparent;
+  text-decoration: none;
+  display: block;
+  letter-spacing: 0.03em;
+  width: 145px;
+}
+
+.logo-color {
+  background-image: linear-gradient(to right, var(--highlight-color) 0%, var(--highlight-color) 40.4%, var(--main-font-color) 40.4%, var(--main-font-color) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.logo-color-contr {
+  background-image: linear-gradient(to right, var(--highlight-color) 0%, var(--highlight-color) 40.4%, #fff 40.4%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.flex-phone-mail {
+  flex-basis: content;
+  margin-left: 30px;
+}
+
+.contrast {
+  background-color: var(--bk-dark-color);
+  color: #fff;
+}
+
+.call-to-action {
+  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.call-to-action-bg {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/index/cta_bg.jpg),
+    linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1)100%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 1600px, 1600px, 100%;
+  background-position: center, center, center;
+}
+
+.call-to-action-h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+}
+
+.call-to-action-button {
+  background: var(--highlight-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: inherit;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: initial;
+}
+
+.call-to-action-button:hover {
+  cursor: pointer;
+}
+
+.features {
+  margin-bottom: 94px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  display: block;
+  width: 270px;
+}
+
+.feature>h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: var(--line-height-for-font-14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /*position of next element*/
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.feature>p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--ordinary-font-color);
+}
+
+.icon-feature {
+  fill: var(--client-logo-color);
+  background-color: var(--team-and-button-color);
+  width: inherit;
+  height: 120px;
+  border-radius: 4px;
+  padding: 25px 0;
+}
+
+.boxes {
+  /*positioning*/
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  position: relative;
+  max-height: 294px;
+  width: 370px;
+}
+
+.box-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: var(--line-height-for-font-14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  padding: 28px;
+  height: 70px;
+  width: inherit;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.h2-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team {
+  background: var(--team-and-button-color);
+  min-height: 648px;
+}
+
+.team-cards {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card {
+  width: 270px;
+  height: 428px;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.team-card-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  /*positioning*/
+  margin: 30px auto 10px;
+}
+
+.team-card-job {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--ordinary-font-color);
+  margin-bottom: 16px;
+}
+
+/* social media icons in footer */
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list>li {
+  line-height: 0px;
+}
+
+.icon-client-logo {
+  fill: var(--client-logo-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--client-logo-color);
+  border-radius: 4px;
+  padding: 16px 0;
+}
+
+.icon-client-logo:hover {
+  fill: var(--highlight-color);
+  border-color: var(--highlight-color);
+  cursor: pointer;
+  transition: fill var(--transition-time-timing), border-color var(--transition-time-timing);
+
+}
+
+/*here start footer*/
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-data {
+  min-height: 252px;
+  padding: 60px 0;
+}
+
+.address-margin {
+  margin-bottom: 4px;
+}
+
+.address-margin-2 {
+  margin-top: 20px;
+}
+
+.address-font {
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.footer-social {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-join-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: var(--line-height-for-font-14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.icon-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+}
+
+.icon-social-list>li {
+  line-height: 0;
+}
+
+.icon-social-background {
+  background-color: var(--elipse);
+  width: 44px;
+  border-radius: 50%;
+}
+
+.icon-social-background:hover {
+  background-color: var(--highlight-color);
+  transition: background-color var(--transition-time-timing);
+
+}
+
+.icon-social {
+  fill: var(--client-logo-color)
+}
+
+.icon-contrast {
+  fill: #fff
+}
+
+.icon-social:hover {
+  fill: #fff;
+  transition: fill var(--transition-time-timing);
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  padding-top: 12px;
+  width: 570px;
+}
+
+.email-input-form {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+}
+
+.email-input-entry {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 50px;
+  padding: 15px 16px;
+  flex-grow: 4;
+}
+
+
+
+.icon-send {
+  margin-left: 24px;
+}
+
+/*here starts modal window (index.html) css*/
+.modal {
+  width: 528px;
+  height: 581px;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fade-in 1s forwards;
+}
+
+.backdrop[data-modal-close] {
+  display: block;
+  pointer-events: none;
+  inset: 0;
+  animation: fade-out 500ms forwards
+}
+
+.icon-close-button {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+}
+
+.icon-close {
+  fill: #000;
+  margin: auto;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/*here starts portfolio.html css*/
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 8px;
+  margin-bottom: 50px;
+}
+
+.filter-button {
+  background-color: var(--team-and-button-color);
+  padding: 6px 22px;
+  margin: 0 4px;
+  border: 4px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+}
+
+.filter-button:active,
+.filter-button:hover {
+  background-color: var(--highlight-color);
+  color: #fff;
+  /* shadow-middle */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-time-timing), color var(--transition-time-timing), box-shadow var(--transition-time-timing),
+    border-radius var(--transition-time-timing);
+}
+
+.project-gallery {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--element-gap);
+
+}
+
+.project {
+  display: block;
+  position: relative;
+  height: 404px;
+  max-width: 370px;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--project-gallery-border-color);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  flex-basis: calc((100%-60px)/3);
+
+}
+
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: box-shadow var(--transition-time-timing);
+}
+
+.project:hover .project-overlay {
+  transform: translateY(0);
+  transition: transform var(--transition-time-timing);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  padding: 49px 45px 49px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--transition-time-timing);
+}
+
+.project-overlay>p {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.project-overlay-mask {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay-mask>img {
+  display: block;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+  padding: 20px 0 0 24px;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+  color: var(--ordinary-font-color);
+  padding: 0 0 20px 24px;
+}
+
+/*CSS positions universal (across many html)*/
+.section {
+  padding: 94px 0;
+}
+
+.section-bot-margin {
+  margin-bottom: 94px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-display {
+  display: block;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
