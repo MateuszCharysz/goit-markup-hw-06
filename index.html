@@ -324,7 +324,7 @@ font-family: "Roboto", sans-serif;-->
         <p class="footer-join-us">zapisz się do newslettera</p>
         <form name="email-input-form" class="email-input-form">
           <label>
-            <input type="email" name="email" placeholder="E-mail" class="email-input-entry contrast" />
+            <input type="email" name="newsletter" placeholder="E-mail" class="email-input-entry contrast" />
           </label>
           <button type="submit" class="call-to-action-button">Zapisz się <svg width="24px" height="24px"
               class="icon-contrast icon-send">
@@ -341,6 +341,30 @@ font-family: "Roboto", sans-serif;-->
           <use href="images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <p class="order-service-title">Zostaw swoje dane w formularzu poniżej</p>
+      <form name="order-service" class="order-service">
+        <label class="order-service-labels">
+          Imię
+          <input type="text" name="alias" />
+        </label>
+        <label class="order-service-labels">
+          Telefon
+          <input type="tel" name="phone-number" />
+        </label>
+        <label class="order-service-labels">
+          Email
+          <input type="email" name="email" />
+        </label>
+        <label class="order-service-labels">
+          Komentarz
+          <textarea type="text" name="order-comment" placeholder="Wprowadź tekst"spellcheck></textarea>
+        </label>
+        <label>
+          <input type="checkbox" unchecked/>
+          Oświadczam, iż akceptuję <a href="" target="_blank">Regulamin</a> i <a href="" target="_blank">Politykę prywatności</a>
+        </label>
+        <button type="submit" class="call-to-action-button ">Wyślij</button>
+      </form>
     </div>
   </div>
   <script src="js/modal.js">

@@ -189,7 +189,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: inherit;
+  color: #fff;
   border: 0px;
   display: flex;
   align-items: center;
@@ -481,7 +481,31 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
+
+.order-service {
+  background-color: inherit;
+}
+
+.order-service-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.order-service-labels {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--ordinary-font-color);
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .backdrop {
   position: fixed;
@@ -512,7 +536,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-
 }
 
 .icon-close {
