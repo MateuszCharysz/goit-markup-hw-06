@@ -194,7 +194,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: initial;
 }
 
 .call-to-action-button:hover {
@@ -450,7 +449,8 @@ body {
 
 .email-input-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  width: inherit;
   column-gap: 12px;
 }
 
@@ -462,12 +462,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  height: 50px;
-  padding: 15px 16px;
-  flex-grow: 4;
+  padding: 14px 16px;
+  width: 358px;
 }
-
-
 
 .icon-send {
   margin-left: 24px;
