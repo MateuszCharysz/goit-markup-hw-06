@@ -486,6 +486,12 @@ body {
 
 .order-service {
   background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .order-service-title {
@@ -494,6 +500,7 @@ body {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 0.6em;
 }
 
 .order-service-labels {
@@ -503,8 +510,32 @@ body {
   color: var(--ordinary-font-color);
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
+.order-service-squeres {
+  font-size: 16px;
+  line-height: 2.5;
+  letter-spacing: 0.01em;
+  color: var(--ordinary-font-color);
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  text-indent: 42px;
+}
+
+.order-service-comment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--ordinary-font-color);
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  height: 120px;
+    resize: none;
+}
 
 
 .backdrop {

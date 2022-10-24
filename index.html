@@ -345,23 +345,25 @@ font-family: "Roboto", sans-serif;-->
       <form name="order-service" class="order-service">
         <label class="order-service-labels">
           Imię
-          <input type="text" name="alias" />
+          <input type="text" name="alias" class="order-service-squeres" />
         </label>
         <label class="order-service-labels">
           Telefon
-          <input type="tel" name="phone-number" />
+          <input type="tel" name="phone-number" class="order-service-squeres" />
         </label>
-        <label class="order-service-labels">
+        <label class="order-service-labels" class="order-service-squeres">
           Email
-          <input type="email" name="email" />
+          <input type="email" name="email" class="order-service-squeres" />
         </label>
         <label class="order-service-labels">
           Komentarz
-          <textarea type="text" name="order-comment" placeholder="Wprowadź tekst"spellcheck></textarea>
+          <textarea type="text" name="order-comment" placeholder="Wprowadź tekst" spellcheck rows="10"
+            class="order-service-comment"></textarea>
         </label>
         <label>
-          <input type="checkbox" unchecked/>
-          Oświadczam, iż akceptuję <a href="" target="_blank">Regulamin</a> i <a href="" target="_blank">Politykę prywatności</a>
+          <input type="checkbox" unchecked />
+          Oświadczam, iż akceptuję <a href="" target="_blank">Regulamin</a> i <a href="" target="_blank">Politykę
+            prywatności</a>
         </label>
         <button type="submit" class="call-to-action-button ">Wyślij</button>
       </form>
