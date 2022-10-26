@@ -510,18 +510,36 @@ body {
   color: var(--ordinary-font-color);
   display: flex;
   flex-direction: column;
+  row-gap: 0.33em;
   width: 100%;
+  position: relative;
+}
+
+.order-service-labels-icon{
+  position: absolute;
+  top: 2.42em;
+  left: 1em;
+  fill: var(--main-font-color)
 }
 
 .order-service-squeres {
   font-size: 16px;
-  line-height: 2.5;
+  line-height: 2.25;
   letter-spacing: 0.01em;
   color: var(--ordinary-font-color);
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   text-indent: 42px;
+}
+
+.order-service-labels:focus,
+.order-service-comment:focus, .order-service-labels-icon:hover
+  {
+  fill: var(--highlight-color);
+  border-color: var(--highlight-color);
+  outline-style: none;
+  transition: border-color var(--transition-time-timing);
 }
 
 .order-service-comment {
