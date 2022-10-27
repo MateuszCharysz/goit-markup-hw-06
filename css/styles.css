@@ -385,6 +385,7 @@ body {
 }
 
 .address-font {
+  font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
@@ -515,7 +516,7 @@ body {
   position: relative;
 }
 
-.order-service-labels-icon{
+.order-service-labels-icon {
   position: absolute;
   top: 2.42em;
   left: 1em;
@@ -533,13 +534,13 @@ body {
   text-indent: 42px;
 }
 
-.order-service-labels:focus,
-.order-service-comment:focus, .order-service-labels-icon:hover
-  {
+.order-service-squeres:focus~.order-service-labels-icon,
+.order-service-squeres:focus,
+.order-service-comment:focus {
   fill: var(--highlight-color);
   border-color: var(--highlight-color);
   outline-style: none;
-  transition: border-color var(--transition-time-timing);
+  transition: border-color var(--transition-time-timing), fill var(--transition-time-timing);
 }
 
 .order-service-comment {
@@ -561,6 +562,10 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--ordinary-font-color);
 }
 
 .order-service-checkbox>input {
@@ -573,14 +578,6 @@ body {
 
 .order-service-checkbox>input:checked {
   background-image: url('data:image/svg+xml,%3Csvg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15"%3E%3Crect width="16" height="15" rx="2" fill="%232196F3"/%3E%3Cpath d="m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z" fill="%23fff" stroke="%23fff" stroke-width=".2"/%3E%3C/svg%3E');
-}
-
-
-.order-service-checkbox>p {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--ordinary-font-color);
 }
 
 .order-service-checkbox-link {
