@@ -464,6 +464,12 @@ body {
   border-radius: 4px;
   padding: 14px 16px;
   width: 358px;
+  transition: border-color var(--transition-time-timing);
+}
+
+.email-input-entry:focus {
+  border-color: var(--highlight-color);
+  outline: none;
 }
 
 .icon-send {
